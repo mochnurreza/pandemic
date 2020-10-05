@@ -1,6 +1,7 @@
 import React from 'react'
 import {Grid} from '@material-ui/core'
-
+import CardComponent from '../Cards';
+import styles from './card.module.css';
 const info =({data: {confirmed, recovered, deaths, lastUpdate}}) =>{
     if (!confirmed){
         return 'Loading...';
